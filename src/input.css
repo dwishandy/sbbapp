@@ -14,8 +14,6 @@
   --color-dark-gray: #343434;
   --color-black-soft: #0c090a;
   --color-light: #f4f0ec;
-
-  --breakpoint-xs: 30rem;
 }
 
 @layer components {
