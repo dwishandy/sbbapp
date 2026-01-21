@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>
+      Semua Berhak Bisa | Bangun Keahlianmu di Bidang Teknologi Informasi
+    </title>
+    <meta name="description" content="------" />
+    <meta name="keywords" content="Pelatihan dunia IT, Komunitas Profesional" />
+    <meta name="author" content="Semua Berhak Bisa" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Semua Berhak Bisa | Bangun Keahlianmu di Bidang Teknologi Informasi"
+    />
+    <meta
+      property="og:description"
+      content="Bangun Keahlianmu di Bidang Teknologi Informasi"
+    />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/ico/logo.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+      const savedTheme = localStorage.getItem("theme");
+
+      if (savedTheme === "dark") {
+        html.classList.add("dark");
+      }
+      updateIcon();
+    </script>
+  </head>
+  <body class="">
+    <header
+      class="bg-transparent bg-opacity-70 backdrop-blur-sm fixed top-0 left-0 z-10 w-full px-6 py-4 flex justify-center items-center md:py-1 md:px-12 transition-all duration-500 ease"
+    >
+      <div class="container flex justify-between items-center">
+        <div>
+          <a href="#">
+            <img
+              src="assets/img/logo.webp"
+              alt="Logo Semua Berhak Bisa"
+              class="w-8 md:w-10"
+            />
+          </a>
+        </div>
+
+        <div>
+          <button
+            id="hamburger"
+            name="hamburger"
+            type="button"
+            class="cursor-pointer block md:hidden"
+          >
+            <div
+              class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+            ></div>
+            <div
+              class="hamburger-line transition duration-300 ease-in-out"
+            ></div>
+            <div
+              class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
+            ></div>
+          </button>
+
+          <nav
+            id="nav-menu"
+            class="bg-white dark:bg-black-soft absolute left-0 top-full w-full px-5 py-5 hidden shadow-lg md:static md:block md:bg-transparent md:shadow-none md:dark:bg-transparent font-semibold flex-wrap"
+          >
+            <ul class="block md:flex">
+              <li class="group">
+                <a
+                  href="#"
+                  class="mx-3 flex py-2 md:text-sm group-hover:text-firstcol"
+                  >Beranda</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="tentang.html"
+                  class="mx-3 flex py-2 md:text-sm group-hover:text-firstcol"
+                  >Tentang Komunitas</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="bidang.html"
+                  class="mx-3 flex py-2 md:text-sm group-hover:text-firstcol"
+                  >Bidang Layanan</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#"
+                  class="mx-3 mt-3 md:mt-0 flex justify-center btn-template"
+                  >Mulai Konsultasi</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="flex items-center">
+          <button
+            id="theme-toggle"
+            aria-label="Toggle blacktext-black-soft mode"
+            class="cursor-pointer"
+          >
+            <span id="icon-moon">
+              <img src="assets/icons/moon.webp" alt="Moon" class="w-8" />
+            </span>
+            <span id="icon-sun" class="hidden">
+              <img src="assets/icons/Sun.webp" alt="Sun" class="w-8" />
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- hero Section Start -->
+    <section
+      id="herosection"
+      class="font-inter w-full h-dvh py-8 px-6 md:px-12 flex flex-wrap justify-center items-center"
+    >
+      <div class="container">
+        <div class="background h-dvh">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="flex flex-wrap justify-center">
+          <h1
+            class="w-full text-center font-bold text-[28px]/[30px] md:text-[40px]/[46px]"
+          >
+            Kuasai Bidang Teknologi Informasi, <br />
+            Siapkan Masa Depanmu.
+          </h1>
+          <p class="text-sm w-full text-center mt-2 mb-8 md:text-base">
+            Mulai belajar gratis di
+            <span class="text-firstcol font-bold md:text-base"
+              >#SemuaBerhakBisa</span
+            >
+          </p>
+          <a
+            href="bit.ly/PendaftaranBelajarSBB"
+            class="btn-template font-semibold md:text-sm"
+            >Mulai Belajar</a
+          >
+        </div>
+
+        <div class="mt-20 md:mt-24">
+          <div class="flex justify-center mb-8">
+            <h3 class="font-semibold text-lg">Bidang Akademi:</h3>
+          </div>
+          <div class="grid grid-cols-2 gap-4 md:grid-cols-4 font-fira">
+            <a
+              href="#"
+              class="place-self-center flex items-center py-1.5 px-[23px] shadow-md rounded border-2 border-firstcol md:py-2 dark:hover:bg-firstcol transition-all"
+            >
+              <i
+                class="fa-solid text-[16px] text-black-soft dark:text-light transition-all duration-500 ease md:text-lg"
+                ></i
+              >
+              <h3 class="ml-1.5 font-fira font-bold md:text-sm">Pemrograman</h3>
+            </a>
+            <a
+              href="#"
+              class="place-self-center flex items-center py-1.5 px-[24px] shadow-md rounded border-2 border-secondcol md:py-2 dark:hover:bg-secondcol transition-all"
+            >
+              <i
+                class="fa-solid text-[16px] text-black-soft dark:text-light transition-all duration-500 ease md:text-lg"
+                ></i
+              >
+              <h3 class="ml-2 font-fira font-bold md:text-sm">Desain Grafis</h3>
+            </a>
+            <a
+              href="#"
+              class="place-self-center flex items-center py-1.5 px-[9px] shadow-md rounded border-2 border-thirdcol md:py-2 dark:hover:bg-thirdcol transition-all"
+            >
+              <i
+                class="fa-solid text-[16px] text-black-soft dark:text-light transition-all duration-500 ease md:text-lg"
+                ></i
+              >
+              <h3 class="ml-2 font-fira font-bold md:text-sm">
+                Jaringan Komputer
+              </h3>
+            </a>
+            <a
+              href="#"
+              class="place-self-center flex items-center py-1.5 px-4 shadow-md rounded border-2 border-fourthcol md:py-2 dark:hover:bg-fourthcol transition-all"
+            >
+              <i
+                class="fa-brands text-[16px] text-black-soft dark:text-light transition-all duration-500 ease md:text-lg"
+                ></i
+              >
+              <h3 class="ml-2 font-fira font-bold md:text-sm">
+                Microsoft Office
+              </h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero Section End -->
+
+    <!-- Kenapa Kami Section Start -->
+    <section class="w-full flex justify-center px-6 py-20 md:px-12 md:py-20">
+      <div class="container flex justify-center flex-wrap">
+        <div class="mb-10">
+          <h2
+            class="font-inter text-2xl text-center font-bold text-black-soft dark:text-light md:text-3xl"
+          >
+            Kenapa
+            <span class="text-firstcol">#SemuaBerhakBisa</span>
+            Akademi?
+          </h2>
+          <p
+            class="text-center mt-2 md:text-base text-black-soft dark:text-light"
+          >
+            Lorem ipsum dolor sit amet consectetur adipiscing elit quisque
+            faucibus ex sapien vitae pellentesque sem.
+          </p>
+        </div>
+
+        <div class="w-full flex justify-between items-start flex-wrap">
+          <div class="w-full space-y-3">
+            <details
+              open
+              class="group bg-light dark:bg-dark-gray rounded-lg p-4"
+            >
+              <summary
+                class="select-none flex cursor-pointer list-none items-center justify-between font-semibold text-sm md:text-base"
+              >
+                Belajar fleksibel kapan dan dimana saja
+                <span class="transition-transform group-open:rotate-180">
+                  <i
+                    class="fa-solid text-[16px] text-black-soft dark:text-light transition-all duration-500 ease md:text-lg"
+                    ></i
+                  >
+                </span>
+              </summary>
+              <p
+                class="mt-3 text-black-soft dark:text-white transition-all duration-500 ease md:text-sm"
+              >
+                Belajar dapat dilakukan kapan saja sesuai waktu yang kamu
+                miliki.
+              </p>
+            </details>
+
+            <details class="group bg-light dark:bg-dark-gray rounded-lg p-4">
+              <summary
+                class="select-none flex cursor-pointer list-none items-center justify-between font-semibold text-sm md:text-base"
+              >
+                Metode pembelajaran offline & online
+                <span class="transition-transform group-open:rotate-180">
+                  <i
+                    class="fa-solid text-[16px] text-black-soft dark:text-light transition-all duration-500 ease md:text-lg"
+                    ></i
+                  >
+                </span>
+              </summary>
+              <p
+                class="mt-3 text-sm text-black-soft dark:text-white transition-all duration-500 ease md:text-sm"
+              >
+                Tersedia metode pembelajaran tatap muka dan daring.
+              </p>
+            </details>
+
+            <details class="group bg-light dark:bg-dark-gray rounded-lg p-4">
+              <summary
+                class="select-none flex cursor-pointer list-none items-center justify-between font-semibold text-sm md:text-base"
+              >
+                Belajar gratis dengan mentor berpengalaman
+                <span class="transition-transform group-open:rotate-180">
+                  <i
+                    class="fa-solid text-[16px] text-black-soft dark:text-light transition-all duration-500 ease md:text-lg"
+                    ></i
+                  >
+                </span>
+              </summary>
+              <p
+                class="mt-3 text-sm text-black-soft dark:text-white transition-all duration-500 ease md:text-sm"
+              >
+                Mentor memiliki pengalaman profesional dan aktif di bidangnya.
+              </p>
+            </details>
+
+            <details class="group bg-light dark:bg-dark-gray rounded-lg p-4">
+              <summary
+                class="select-none flex cursor-pointer list-none items-center justify-between font-semibold text-sm md:text-base"
+              >
+                Terdapat 4 bidang yang bisa kamu pelajari
+                <span class="transition-transform group-open:rotate-180">
+                  <i
+                    class="fa-solid text-[16px] text-black-soft dark:text-light transition-all duration-500 ease md:text-lg"
+                    ></i
+                  >
+                </span>
+              </summary>
+              <p
+                class="mt-3 text-sm text-black-soft dark:text-white transition-all duration-500 ease md:text-sm"
+              >
+                Mentor memiliki pengalaman profesional dan aktif di bidangnya.
+              </p>
+            </details>
+
+            <details class="group bg-light dark:bg-dark-gray rounded-lg p-4">
+              <summary
+                class="select-none flex cursor-pointer list-none items-center justify-between font-semibold text-sm md:text-base"
+              >
+                Panduan pembelajaran
+                <span class="transition-transform group-open:rotate-180">
+                  <i
+                    class="fa-solid text-[16px] text-black-soft dark:text-light transition-all duration-500 ease md:text-lg"
+                    ></i
+                  >
+                </span>
+              </summary>
+              <p
+                class="mt-3 text-sm text-black-soft dark:text-white transition-all duration-500 ease md:text-sm"
+              >
+                Mentor memiliki pengalaman profesional dan aktif di bidangnya.
+              </p>
+            </details>
+
+            <details class="group bg-light dark:bg-dark-gray rounded-lg p-4">
+              <summary
+                class="select-none flex cursor-pointer list-none items-center justify-between font-semibold text-sm md:text-base"
+              >
+                Bagaimana cara mendaftar belajar gratis?
+                <span class="transition-transform group-open:rotate-180">
+                  <i
+                    class="fa-solid text-[16px] text-black-soft dark:text-light transition-all duration-500 ease md:text-lg"
+                    ></i
+                  >
+                </span>
+              </summary>
+              <p
+                class="mt-3 text-sm text-black-soft dark:text-white transition-all duration-500 ease md:text-sm"
+              >
+                Mentor memiliki pengalaman profesional dan aktif di bidangnya.
+              </p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Kenapa Kami Section End -->
+
+    <!-- Metode Belajar Section Start -->
+    <section
+      class="bg-light dark:bg-dark-gray w-full flex justify-center px-6 py-20 md:px-12 md:py-20"
+    >
+      <div class="container">
+        <div class="flex flex-wrap justify-center">
+          <div class="w-full lg:w-[40%]">
+            <h2
+              class="text-2xl font-bold text-black-soft dark:text-light leading-tight md:text-3xl"
+            >
+              Metode Belajar
+              <span class="text-firstcol">#SemuaBerhakBisa</span>
+            </h2>
+
+            <p
+              class="mt-4 mb-6 text-black-soft dark:text-light max-w-md md:text-sm"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit quisque
+              faucibus ex sapien vitae pellentesque sem placerat in id cursus mi
+              tellus.
+            </p>
+            <a href="#" class="btn-template font-semibold md:text-sm"
+              >Lihat Layanan</a
+            >
+          </div>
+
+          <div class="w-full lg:w-[60%] mt-8 relative md:mt-10">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div
+                    class="bg-white rounded-xl shadow-md p-6 flex gap-6 items-center"
+                  >
+                    <img src="assets/img/online.png" class="w-20 shrink-0" />
+                    <div>
+                      <h3
+                        class="font-semibold text-black-soft text-base md:text-lg"
+                      >
+                        Metode Belajar Online
+                      </h3>
+                      <p class="mt-2 md:text-sm text-black-soft">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        quisque faucibus ex sapien vitae pellentesque sem.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div
+                    class="bg-white rounded-xl shadow-md p-6 flex gap-6 items-center"
+                  >
+                    <img src="assets/img/offline.png" class="w-20 shrink-0" />
+                    <div>
+                      <h3
+                        class="font-semibold text-black-soft text-base md:text-lg"
+                      >
+                        Metode Belajar Offline
+                      </h3>
+                      <p class="mt-2 md:text-sm text-black-soft">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        quisque faucibus ex sapien vitae pellentesque sem.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide hidden md:block">
+                  <div
+                    class="bg-white rounded-xl shadow-md p-6 flex gap-6 items-center"
+                  >
+                    <img src="assets/img/online.png" class="w-20 shrink-0" />
+                    <div>
+                      <h3
+                        class="font-semibold text-black-soft text-base md:text-lg"
+                      >
+                        Metode Belajar Online
+                      </h3>
+                      <p class="mt-2 md:text-sm text-black-soft">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        quisque faucibus ex sapien vitae pellentesque sem.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide hidden md:block">
+                  <div
+                    class="bg-white rounded-xl shadow-md p-6 flex gap-6 items-center"
+                  >
+                    <img src="assets/img/offline.png" class="w-20 shrink-0" />
+                    <div>
+                      <h3
+                        class="font-semibold text-black-soft text-base md:text-lg"
+                      >
+                        Metode Belajar Offline
+                      </h3>
+                      <p class="mt-2 md:text-sm text-black-soft">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        quisque faucibus ex sapien vitae pellentesque sem.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Metode Belajar Section End -->
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: 1.2,
+        spaceBetween: 24,
+        centeredSlides: false,
+        watchOverflow: false,
+
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 1.5,
+          },
+          1024: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    </script>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>

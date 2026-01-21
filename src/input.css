@@ -1,0 +1,167 @@
+@import "tailwindcss";
+@import "./fonts.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-fira: "Fira Sans", sans-serif;
+
+  --color-firstcol: #20ace1;
+  --color-secondcol: #da175b;
+  --color-thirdcol: #f8b63e;
+  --color-fourthcol: #673187;
+  --color-dark-gray: #343434;
+  --color-black-soft: #0c090a;
+  --color-light: #f4f0ec;
+
+  --breakpoint-xs: 30rem;
+}
+
+@layer components {
+  #theme-toggle span {
+    transition: opacity 0.3s ease;
+  }
+
+  .btn-template {
+    @apply px-4 py-2 bg-firstcol text-white rounded border border-firstcol hover:bg-transparent hover:text-black-soft transition-all dark:hover:text-light;
+  }
+
+  .hamburger-line {
+    @apply w-6 h-0.5 my-1.5 bg-black-soft dark:bg-white;
+  }
+
+  .hamburger-active > div:nth-child(1) {
+    @apply rotate-45;
+  }
+
+  .hamburger-active > div:nth-child(2) {
+    @apply scale-0;
+  }
+
+  .hamburger-active > div:nth-child(3) {
+    @apply -rotate-45;
+  }
+
+  .main-hero {
+    background-image: url("../assets/img/bghero.png");
+  }
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #0c090a;
+}
+
+html.dark {
+  --bg-color: #0c090a;
+  --text-color: #f4f0ec;
+}
+
+body {
+  font-family: "Fira Sans";
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  font-size: 12px;
+}
+
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -10;
+}
+.background span {
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 20vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 50;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.background span:nth-child(0) {
+  color: #da175b;
+  top: 75%;
+  left: 64%;
+  animation-duration: 6s;
+  animation-delay: -1s;
+  transform-origin: 6vw 25vh;
+  box-shadow: 40vmin 0 5.561339725683761vmin;
+}
+.background span:nth-child(1) {
+  color: #20ace1;
+  top: 8%;
+  left: 93%;
+  animation-duration: 6s;
+  animation-delay: -1s;
+  transform-origin: 22vw 18vh;
+  box-shadow: 40vmin 0 5.067098158037473vmin;
+}
+.background span:nth-child(2) {
+  color: #da175b;
+  top: 66%;
+  left: 32%;
+  animation-duration: 6s;
+  animation-delay: -1s;
+  transform-origin: -14vw -24vh;
+  box-shadow: -40vmin 0 5.356430701181164vmin;
+}
+.background span:nth-child(3) {
+  color: #20ace1;
+  top: 85%;
+  left: 51%;
+  animation-duration: 6s;
+  animation-delay: -1s;
+  transform-origin: 10vw 21vh;
+  box-shadow: 40vmin 0 5.249593305687609vmin;
+}
+.background span:nth-child(4) {
+  color: #f8b63e;
+  top: 43%;
+  left: 55%;
+  animation-duration: 6s;
+  animation-delay: -1s;
+  transform-origin: -7vw -1vh;
+  box-shadow: 40vmin 0 5.725764823131545vmin;
+}
+.background span:nth-child(5) {
+  color: #673187;
+  top: 4%;
+  left: 73%;
+  animation-duration: 6s;
+  animation-delay: -1s;
+  transform-origin: -8vw 4vh;
+  box-shadow: -40vmin 0 5.986947326071123vmin;
+}
+.background span:nth-child(6) {
+  color: #f8b63e;
+  top: 11%;
+  left: 89%;
+  animation-duration: 6s;
+  animation-delay: -1s;
+  transform-origin: 4vw 5vh;
+  box-shadow: -40vmin 0 5.985265254392898vmin;
+}
+.background span:nth-child(7) {
+  color: #673187;
+  top: 93%;
+  left: 40%;
+  animation-duration: 6s;
+  animation-delay: -1s;
+  transform-origin: -24vw 0vh;
+  box-shadow: -40vmin 0 5.8306773494470105vmin;
+}
