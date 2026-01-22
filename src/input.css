@@ -40,10 +40,6 @@
   .hamburger-active > div:nth-child(3) {
     @apply -rotate-45;
   }
-
-  .main-hero {
-    background-image: url("../assets/img/bghero.png");
-  }
 }
 
 :root {
