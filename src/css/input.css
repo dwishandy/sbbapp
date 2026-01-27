@@ -40,6 +40,10 @@
   .hamburger-active > div:nth-child(3) {
     @apply -rotate-45;
   }
+
+  .filter-btn.active {
+    @apply bg-firstcol text-white border-firstcol hover:text-firstcol;
+  }
 }
 
 :root {

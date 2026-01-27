@@ -1,0 +1,955 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Bidang Layanan Semua Berhak Bisa</title>
+
+    <meta
+      property="og:description"
+      content="Bangun Keahlianmu di Bidang Teknologi Informasi"
+    />
+    <link href="../css/output.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="../assets/icons/logo.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script>
+      const savedTheme = localStorage.getItem("theme");
+
+      if (savedTheme === "dark") {
+        html.classList.add("dark");
+      }
+      updateIcon();
+    </script>
+  </head>
+  <body>
+    <!-- header start -->
+    <header
+      class="bg-transparent bg-opacity-70 backdrop-blur-sm fixed top-0 left-0 z-10 w-full px-6 py-4 flex justify-center items-center md:py-1 md:px-12 transition-all duration-500 ease"
+    >
+      <div class="container flex justify-between items-center">
+        <div>
+          <a href="#">
+            <img
+              src="../assets/img/logo.webp"
+              alt="Logo Semua Berhak Bisa"
+              class="w-8 md:w-10"
+            />
+          </a>
+        </div>
+
+        <div>
+          <button
+            id="hamburger"
+            name="hamburger"
+            type="button"
+            class="cursor-pointer block md:hidden"
+          >
+            <div
+              class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+            ></div>
+            <div
+              class="hamburger-line transition duration-300 ease-in-out"
+            ></div>
+            <div
+              class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
+            ></div>
+          </button>
+
+          <nav
+            id="nav-menu"
+            class="bg-white dark:bg-black-soft absolute left-0 top-full w-full px-5 py-5 hidden shadow-lg md:static md:block md:bg-transparent md:shadow-none md:dark:bg-transparent font-semibold flex-wrap"
+          >
+            <ul class="block md:flex">
+              <li class="group">
+                <a
+                  href="#"
+                  class="mx-3 flex py-2 md:text-sm group-hover:text-firstcol"
+                  >Beranda</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="tentang.html"
+                  class="mx-3 flex py-2 md:text-sm group-hover:text-firstcol"
+                  >Tentang Komunitas</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="bidang.html"
+                  class="mx-3 flex py-2 md:text-sm group-hover:text-firstcol"
+                  >Bidang Layanan</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#"
+                  class="mx-3 mt-3 md:mt-0 flex justify-center btn-template"
+                  >Mulai Konsultasi</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="flex items-center">
+          <button
+            id="theme-toggle"
+            aria-label="Toggle blacktext-black-soft mode"
+            class="cursor-pointer"
+          >
+            <span id="icon-moon">
+              <img src="../assets/icons/moon.webp" alt="Moon" class="w-8" />
+            </span>
+            <span id="icon-sun" class="hidden">
+              <img src="../assets/icons/Sun.webp" alt="Sun" class="w-8" />
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <section class="w-full flex justify-center px-6 py-24 md:px-12 md:py-28">
+      <div class="container">
+        <div class="flex flex-wrap justify-between space-y-6 md:space-x-10">
+          <!-- Left Content -->
+          <div class="w-full md:w-[30%]">
+            <div class="mb-2">
+              <h2
+                class="text-2xl font-inter font-bold text-black-soft dark:text-light leading-tight md:text-3xl"
+              >
+                Metode Belajar <br />
+                <span class="text-firstcol">#SemuaBerhakBisa</span>
+              </h2>
+            </div>
+            <!-- sm layout -->
+            <div class="space-x-2 space-y-3 md:hidden">
+              <button
+                class="filter-btn active w-fit rounded-full border border-firstcol px-3 py-1.5 text-[10px] hover:bg-transparent transition cursor-pointer"
+                data-filter="all"
+              >
+                Lihat Semua
+              </button>
+              <button
+                class="filter-btn w-fit rounded-full border border-firstcol px-3 py-1.5 text-[10px] hover:bg-transparent transition cursor-pointer"
+                data-filter="pemrograman"
+              >
+                Pemrograman
+              </button>
+              <button
+                class="filter-btn w-fit rounded-full border border-firstcol px-3 py-1.5 text-[10px] hover:bg-transparent transition cursor-pointer"
+                data-filter="design"
+              >
+                Desain Grafis
+              </button>
+              <button
+                class="filter-btn w-fit rounded-full border border-firstcol px-3 py-1.5 text-[10px] hover:bg-transparent transition cursor-pointer"
+                data-filter="jaringan"
+              >
+                Jaringan Komputer
+              </button>
+              <button
+                class="filter-btn w-fit rounded-full border border-firstcol px-3 py-1.5 text-[10px] hover:bg-transparent transition cursor-pointer"
+                data-filter="office"
+              >
+                Microsoft Office
+              </button>
+            </div>
+            <!-- md layout -->
+            <div class="space-y-3 hidden md:block">
+              <button
+                class="filter-btn active w-full rounded-sm border text-left px-4 py-2 text-sm hover:bg-transparent transition cursor-pointer"
+                data-filter="all"
+              >
+                Lihat Semua
+              </button>
+              <button
+                class="filter-btn w-full rounded-sm border text-left px-4 py-2 text-sm hover:bg-transparent transition cursor-pointer"
+                data-filter="pemrograman"
+              >
+                Pemrograman
+              </button>
+              <button
+                class="filter-btn w-full rounded-sm border text-left px-4 py-2 text-sm hover:bg-transparent transition cursor-pointer"
+                data-filter="design"
+              >
+                Desain Grafis
+              </button>
+              <button
+                class="filter-btn w-full rounded-sm border text-left px-4 py-2 text-sm hover:bg-transparent transition cursor-pointer"
+                data-filter="jaringan"
+              >
+                Jaringan Komputer
+              </button>
+              <button
+                class="filter-btn w-full rounded-sm border text-left px-4 py-2 text-sm hover:bg-transparent transition cursor-pointer"
+                data-filter="office"
+              >
+                Microsoft Office
+              </button>
+            </div>
+          </div>
+
+          <!-- right Content -->
+          <div class="w-full md:w-[65%] space-y-6">
+            <!-- Card FE Web Dasar-->
+            <div class="service-card" data-category="pemrograman">
+              <div
+                class="card flex flex-wrap border-2 border-firstcol rounded-xl shadow-sm"
+              >
+                <div
+                  class="w-full border-b-2 border-firstcol px-3 pb-4 pt-7 flex flex-wrap justify-between md:w-[40%] md: md:border-r-2 md:border-b-0 md:px-5 md:py-7"
+                >
+                  <div class="md:w-full">
+                    <h3 class="text-lg/5 font-bold mb-2 md:text-xl">
+                      Front-end Web Dasar
+                    </h3>
+
+                    <div class="flex items-center space-x-1">
+                      <div
+                        class="w-6 h-6 flex justify-center items-center rounded-full bg-firstcol"
+                      >
+                        <i
+                          class="fa-solid text-xs text-light transition-all duration-500 ease md:text-sm"
+                          ></i
+                        >
+                      </div>
+                      <p
+                        class="text-firstcol font-semibold text-sm md:text-base"
+                      >
+                        Pemrograman
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="mt-2 md:mt-8">
+                    <a href="#" class="btn-template">Mulai Belajar</a>
+                  </div>
+                </div>
+
+                <div class="px-3 pt-4 pb-7 md:px-5 md:py-7">
+                  <h4 class="font-semibold text-base md:text-lg">
+                    Pilihan Materi :
+                  </h4>
+
+                  <ol class="block">
+                    <li>
+                      <p class="md:text-sm">1. HTML</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">2. CSS</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">3. JavaScript</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">4. Project Sederhana</p>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Backend Programming -->
+            <div class="service-card" data-category="pemrograman">
+              <div
+                class="card flex flex-wrap border-2 border-firstcol rounded-xl shadow-sm"
+              >
+                <div
+                  class="w-full border-b-2 border-firstcol px-3 pb-4 pt-7 flex flex-wrap justify-between md:w-[40%] md: md:border-r-2 md:border-b-0 md:px-5 md:py-7"
+                >
+                  <div class="md:w-full">
+                    <h3 class="text-lg/5 font-bold mb-2 md:text-xl">
+                      Backend Programming
+                    </h3>
+
+                    <div class="flex items-center space-x-1">
+                      <div
+                        class="w-6 h-6 flex justify-center items-center rounded-full bg-firstcol"
+                      >
+                        <i
+                          class="fa-solid text-xs text-light transition-all duration-500 ease md:text-sm"
+                          ></i
+                        >
+                      </div>
+                      <p
+                        class="text-firstcol font-semibold text-sm md:text-base"
+                      >
+                        Pemrograman
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="mt-2 md:mt-8">
+                    <a href="#" class="btn-template">Mulai Belajar</a>
+                  </div>
+                </div>
+
+                <div class="px-3 pt-4 pb-7 md:px-5 md:py-7">
+                  <h4 class="font-semibold text-base md:text-lg">
+                    Pilihan Materi :
+                  </h4>
+
+                  <ol class="block">
+                    <li>
+                      <p class="md:text-sm">1. Framework Java Spring Boot</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">2. Bahasa Pemrograman Go</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">3. Bahasa Pemrograman Python</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">4. Bahasa Pemrograman PHP</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">5. CRUD to Database</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">6. Login dan Mainpage</p>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Cloud Fundamental -->
+            <div class="service-card" data-category="pemrograman">
+              <div
+                class="card flex flex-wrap border-2 border-firstcol rounded-xl shadow-sm"
+              >
+                <div
+                  class="w-full border-b-2 border-firstcol px-3 pb-4 pt-7 flex flex-wrap justify-between md:w-[40%] md: md:border-r-2 md:border-b-0 md:px-5 md:py-7"
+                >
+                  <div class="md:w-full">
+                    <h3 class="text-lg/5 font-bold mb-2 md:text-xl">
+                      Cloud Fundamental
+                    </h3>
+
+                    <div class="flex items-center space-x-1">
+                      <div
+                        class="w-6 h-6 flex justify-center items-center rounded-full bg-firstcol"
+                      >
+                        <i
+                          class="fa-solid text-xs text-light transition-all duration-500 ease md:text-sm"
+                          ></i
+                        >
+                      </div>
+                      <p
+                        class="text-firstcol font-semibold text-sm md:text-base"
+                      >
+                        Pemrograman
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="mt-2 md:mt-8">
+                    <a href="#" class="btn-template">Mulai Belajar</a>
+                  </div>
+                </div>
+
+                <div class="px-3 pt-4 pb-7 md:px-5 md:py-7">
+                  <h4 class="font-semibold text-base md:text-lg">
+                    Pilihan Materi :
+                  </h4>
+
+                  <ol class="block">
+                    <li>
+                      <p class="md:text-sm">1. Basic Google Cloud dan AWS</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">2. Cloud Networking</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">3. SAS, PASS, IAS</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">4. Basic CDN & Load Balancer</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">5. Basic Cloud Security</p>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card DevOps Fundamental -->
+            <div class="service-card" data-category="pemrograman">
+              <div
+                class="card flex flex-wrap border-2 border-firstcol rounded-xl shadow-sm"
+              >
+                <div
+                  class="w-full border-b-2 border-firstcol px-3 pb-4 pt-7 flex flex-wrap justify-between md:w-[40%] md: md:border-r-2 md:border-b-0 md:px-5 md:py-7"
+                >
+                  <div class="md:w-full">
+                    <h3 class="text-lg/5 font-bold mb-2 md:text-xl">
+                      DevOps Fundamental
+                    </h3>
+
+                    <div class="flex items-center space-x-1">
+                      <div
+                        class="w-6 h-6 flex justify-center items-center rounded-full bg-firstcol"
+                      >
+                        <i
+                          class="fa-solid text-xs text-light transition-all duration-500 ease md:text-sm"
+                          ></i
+                        >
+                      </div>
+                      <p
+                        class="text-firstcol font-semibold text-sm md:text-base"
+                      >
+                        Pemrograman
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="mt-2 md:mt-8">
+                    <a href="#" class="btn-template">Mulai Belajar</a>
+                  </div>
+                </div>
+
+                <div class="px-3 pt-4 pb-7 md:px-5 md:py-7">
+                  <h4 class="font-semibold text-base md:text-lg">
+                    Pilihan Materi :
+                  </h4>
+
+                  <ol class="block">
+                    <li>
+                      <p class="md:text-sm">1. Devops Fundamental</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">2. Linux Scripting</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">
+                        3. Infrastructure as Code / Security as Code
+                      </p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">4. Basic Source Code Management</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">5. Basic K8S Strategy</p>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Artificial Intelligence -->
+            <div class="service-card" data-category="pemrograman">
+              <div
+                class="card flex flex-wrap border-2 border-firstcol rounded-xl shadow-sm"
+              >
+                <div
+                  class="w-full border-b-2 border-firstcol px-3 pb-4 pt-7 flex flex-wrap justify-between md:w-[40%] md: md:border-r-2 md:border-b-0 md:px-5 md:py-7"
+                >
+                  <div class="md:w-full">
+                    <h3 class="text-lg/5 font-bold mb-2 md:text-xl">
+                      Artificial Intelligence
+                    </h3>
+
+                    <div class="flex items-center space-x-1">
+                      <div
+                        class="w-6 h-6 flex justify-center items-center rounded-full bg-firstcol"
+                      >
+                        <i
+                          class="fa-solid text-xs text-light transition-all duration-500 ease md:text-sm"
+                          ></i
+                        >
+                      </div>
+                      <p
+                        class="text-firstcol font-semibold text-sm md:text-base"
+                      >
+                        Pemrograman
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="mt-2 md:mt-8">
+                    <a href="#" class="btn-template">Mulai Belajar</a>
+                  </div>
+                </div>
+
+                <div class="px-3 pt-4 pb-7 md:px-5 md:py-7">
+                  <h4 class="font-semibold text-base md:text-lg">
+                    Pilihan Materi :
+                  </h4>
+
+                  <ol class="block">
+                    <li>
+                      <p class="md:text-sm">1. Bahasa Pemrograman Python</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">2. N8N</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">3. Jupyter Notebook</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">4. Machine Learning</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">5. Supervised & Unsupervised</p>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Adobe Ilustrator -->
+            <div class="service-card" data-category="design">
+              <div
+                class="card flex flex-wrap border-2 border-secondcol rounded-xl shadow-sm"
+              >
+                <div
+                  class="w-full border-b-2 border-secondcol px-3 pb-4 pt-7 flex flex-wrap justify-between md:w-[40%] md: md:border-r-2 md:border-b-0 md:px-5 md:py-7"
+                >
+                  <div class="md:w-full">
+                    <h3 class="text-lg/5 font-bold mb-2 md:text-xl">
+                      Adobe Ilustrator
+                    </h3>
+
+                    <div class="flex items-center space-x-1">
+                      <div
+                        class="w-6 h-6 flex justify-center items-center rounded-full bg-secondcol"
+                      >
+                        <i
+                          class="fa-solid text-xs text-light transition-all duration-500 ease md:text-sm"
+                          ></i
+                        >
+                      </div>
+                      <p
+                        class="text-secondcol font-semibold text-sm md:text-base"
+                      >
+                        Desain Grafis
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="mt-2 md:mt-8">
+                    <a
+                      href="#"
+                      class="btn-template bg-secondcol border-secondcol"
+                      >Mulai Belajar</a
+                    >
+                  </div>
+                </div>
+
+                <div class="px-3 pt-4 pb-7 md:px-5 md:py-7">
+                  <h4 class="font-semibold text-base md:text-lg">
+                    Pilihan Materi :
+                  </h4>
+
+                  <ol class="block">
+                    <li>
+                      <p class="md:text-sm">1. Desain logo</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">2. Brand guidlines</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">3. Desain Vektor 2d</p>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Adobe Photoshop -->
+            <div class="service-card" data-category="design">
+              <div
+                class="card flex flex-wrap border-2 border-secondcol rounded-xl shadow-sm"
+              >
+                <div
+                  class="w-full border-b-2 border-secondcol px-3 pb-4 pt-7 flex flex-wrap justify-between md:w-[40%] md: md:border-r-2 md:border-b-0 md:px-5 md:py-7"
+                >
+                  <div class="md:w-full">
+                    <h3 class="text-lg/5 font-bold mb-2 md:text-xl">
+                      Adobe Photoshop
+                    </h3>
+
+                    <div class="flex items-center space-x-1">
+                      <div
+                        class="w-6 h-6 flex justify-center items-center rounded-full bg-secondcol"
+                      >
+                        <i
+                          class="fa-solid text-xs text-light transition-all duration-500 ease md:text-sm"
+                          ></i
+                        >
+                      </div>
+                      <p
+                        class="text-secondcol font-semibold text-sm md:text-base"
+                      >
+                        Desain Grafis
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="mt-2 md:mt-8">
+                    <a
+                      href="#"
+                      class="btn-template bg-secondcol border-secondcol"
+                      >Mulai Belajar</a
+                    >
+                  </div>
+                </div>
+
+                <div class="px-3 pt-4 pb-7 md:px-5 md:py-7">
+                  <h4 class="font-semibold text-base md:text-lg">
+                    Pilihan Materi :
+                  </h4>
+
+                  <ol class="block">
+                    <li>
+                      <p class="md:text-sm">1. Retouching gambar</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">2. Konten media sosial</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">3. Materi Pemasaran</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">4. Manipulasi Foto Surealis</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">5. Desain produk/mockup</p>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Figma -->
+            <div class="service-card" data-category="design">
+              <div
+                class="card flex flex-wrap border-2 border-secondcol rounded-xl shadow-sm"
+              >
+                <div
+                  class="w-full border-b-2 border-secondcol px-3 pb-4 pt-7 flex flex-wrap justify-between md:w-[40%] md: md:border-r-2 md:border-b-0 md:px-5 md:py-7"
+                >
+                  <div class="md:w-full">
+                    <h3 class="text-lg/5 font-bold mb-2 md:text-xl">Figma</h3>
+
+                    <div class="flex items-center space-x-1">
+                      <div
+                        class="w-6 h-6 flex justify-center items-center rounded-full bg-secondcol"
+                      >
+                        <i
+                          class="fa-solid text-xs text-light transition-all duration-500 ease md:text-sm"
+                          ></i
+                        >
+                      </div>
+                      <p
+                        class="text-secondcol font-semibold text-sm md:text-base"
+                      >
+                        Desain Grafis
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="mt-2 md:mt-8">
+                    <a
+                      href="#"
+                      class="btn-template bg-secondcol border-secondcol"
+                      >Mulai Belajar</a
+                    >
+                  </div>
+                </div>
+
+                <div class="px-3 pt-4 pb-7 md:px-5 md:py-7">
+                  <h4 class="font-semibold text-base md:text-lg">
+                    Pilihan Materi :
+                  </h4>
+
+                  <ol class="block">
+                    <li>
+                      <p class="md:text-sm">1. UX research</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">2. UI Guidlines</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">3. Design Thinking</p>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Cisco Packet Tracer -->
+            <div class="service-card" data-category="jaringan">
+              <div
+                class="card flex flex-wrap border-2 border-thirdcol rounded-xl shadow-sm"
+              >
+                <div
+                  class="w-full border-b-2 border-thirdcol px-3 pb-4 pt-7 flex flex-wrap justify-between md:w-[40%] md: md:border-r-2 md:border-b-0 md:px-5 md:py-7"
+                >
+                  <div class="md:w-full">
+                    <h3 class="text-lg/5 font-bold mb-2 md:text-xl">
+                      Cisco Packet Tracer
+                    </h3>
+
+                    <div class="flex items-center space-x-1">
+                      <div
+                        class="w-6 h-6 flex justify-center items-center rounded-full bg-thirdcol"
+                      >
+                        <i
+                          class="fa-solid text-xs text-light transition-all duration-500 ease md:text-sm"
+                          ></i
+                        >
+                      </div>
+                      <p
+                        class="text-thirdcol font-semibold text-sm md:text-base"
+                      >
+                        Jaringan Komputer
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="mt-2 md:mt-8">
+                    <a href="#" class="btn-template bg-thirdcol border-thirdcol"
+                      >Mulai Belajar</a
+                    >
+                  </div>
+                </div>
+
+                <div class="px-3 pt-4 pb-7 md:px-5 md:py-7">
+                  <h4 class="font-semibold text-base md:text-lg">
+                    Pilihan Materi :
+                  </h4>
+
+                  <ol class="block">
+                    <li>
+                      <p class="md:text-sm">1. Dasar Jaringan</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">2. IP Address & Subnetting</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">3. Switch & VLAN</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">4. Routing</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">5. Inter-VLAN, NAT & ACL</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">6. Wireless & Server</p>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card WinBox Mikrotik -->
+            <div class="service-card" data-category="jaringan">
+              <div
+                class="card flex flex-wrap border-2 border-thirdcol rounded-xl shadow-sm"
+              >
+                <div
+                  class="w-full border-b-2 border-thirdcol px-3 pb-4 pt-7 flex flex-wrap justify-between md:w-[40%] md: md:border-r-2 md:border-b-0 md:px-5 md:py-7"
+                >
+                  <div class="md:w-full">
+                    <h3 class="text-lg/5 font-bold mb-2 md:text-xl">
+                      WinBox Mikrotik
+                    </h3>
+
+                    <div class="flex items-center space-x-1">
+                      <div
+                        class="w-6 h-6 flex justify-center items-center rounded-full bg-thirdcol"
+                      >
+                        <i
+                          class="fa-solid text-xs text-light transition-all duration-500 ease md:text-sm"
+                          ></i
+                        >
+                      </div>
+                      <p
+                        class="text-thirdcol font-semibold text-sm md:text-base"
+                      >
+                        Jaringan Komputer
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="mt-2 md:mt-8">
+                    <a href="#" class="btn-template bg-thirdcol border-thirdcol"
+                      >Mulai Belajar</a
+                    >
+                  </div>
+                </div>
+
+                <div class="px-3 pt-4 pb-7 md:px-5 md:py-7">
+                  <h4 class="font-semibold text-base md:text-lg">
+                    Pilihan Materi :
+                  </h4>
+
+                  <ol class="block">
+                    <li>
+                      <p class="md:text-sm">1. Pengenalan MikroTik & Winbox</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">2. IP Address & Subnetting</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">3. DHCP & DNS</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">4. Routing & Gateway</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">5. NAT & Firewall</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">6. Manajemen Bandwidth</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">7. Wireless</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">8. Bridge & VLAN</p>
+                    </li>
+                    <li>
+                      <p class="md:text-sm">9. Hotspot & PPP</p>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bg-footer Start -->
+    <div
+      class="bg-linear-to-b from-white from-25% to-firstcol to-100% dark:from-black-soft"
+    >
+      <!-- Konsultasi Start -->
+      <section class="w-full flex justify-center px-6 py-20 md:px-12 md:py-20">
+        <div class="container flex justify-center flex-wrap">
+          <div class="flex flex-wrap justify-center">
+            <h2
+              class="w-full font-inter text-2xl text-center font-bold text-black-soft dark:text-light md:text-3xl"
+            >
+              Masih Bingung?
+            </h2>
+            <p
+              class="text-center mt-2 md:text-base text-black-soft dark:text-light mb-10 max-w-md md:max-w-xl"
+            >
+              Lorem ipsum dolor sit amet consectetur adipiscing elit quisque
+              faucibus ex sapien vitae pellentesque sem.
+            </p>
+
+            <div class="w-full flex justify-center">
+              <a href="#" class="btn-template font-semibold md:text-sm"
+                >Lihat Ketentuan</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Konsultasi End -->
+
+      <!-- Footer Start -->
+      <footer class="pt-16 md:pt-20 flex flex-wrap justify-center text-white">
+        <div class="container">
+          <div class="px-6 pb-4 flex flex-wrap justify-between md:px-10">
+            <div class="flex items-start gap-x-3">
+              <img src="assets/img/logo.webp" alt="logo" class="w-8" />
+              <div>
+                <h2 class="text-2xl font-semibold md:text-3xl">
+                  #SemuaBerhakBisa
+                </h2>
+                <p class="-mt-1 mb-1 md:text-sm">
+                  Bayar kami dengan senyumanmu.
+                </p>
+                <div class="flex gap-x-1 underline md:gap-x-2">
+                  <a href="#" class="md:text-sm">Home</a>
+                  <a href="#" class="md:text-sm">Tentang Komunitas</a>
+                  <a href="#" class="md:text-sm">Bidang Layanan</a>
+                </div>
+
+                <div class="mt-4 md:hidden">
+                  <h2 class="text-lg font-semibold">Hubungi Kami:</h2>
+                  <div class="flex items-center gap-x-3">
+                    <a
+                      href="#"
+                      class="w-7 h-7 rounded-full flex justify-center items-center hover:bg-dark-gray transition-colors"
+                    >
+                      <i class="fa-brands text-[18px]"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="w-7 h-7 rounded-full flex justify-center items-center hover:bg-dark-gray transition-colors"
+                    >
+                      <i class="fa-brands text-[16px]"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="w-7 h-7 rounded-full flex justify-center items-center hover:bg-dark-gray transition-colors"
+                    >
+                      <i class="fa-brands text-[18px]"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hidden md:block">
+              <h2 class="text-lg font-semibold md:text-xl">Hubungi Kami:</h2>
+              <div class="flex items-center gap-x-3">
+                <a
+                  href="#"
+                  class="w-7 h-7 rounded-full flex justify-center items-center hover:bg-dark-gray transition-colors md:w-8 md:h-8"
+                >
+                  <i class="fa-brands text-[18px] md:text-[22px]"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-7 h-7 rounded-full flex justify-center items-center hover:bg-dark-gray transition-colors md:w-8 md:h-8"
+                >
+                  <i class="fa-brands text-[16px] md:text-[22px]"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-7 h-7 rounded-full flex justify-center items-center hover:bg-dark-gray transition-colors md:w-8 md:h-8"
+                >
+                  <i class="fa-brands text-[18px] md:text-[22px]"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center items-center mt-6 border-t py-4">
+            <p class="md:text-sm">
+              Copyright &copy; 2026 Semua Berhak Bisa. All right reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer End -->
+    </div>
+    <!-- bg-footer End -->
+
+    <script src="../js/script.js"></script>
+    <script src="../js/filter.js"></script>
+  </body>
+</html>

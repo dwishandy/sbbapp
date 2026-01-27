@@ -1,3 +1,5 @@
+// dark and light mode
+
 const toggleBtn = document.getElementById("theme-toggle");
 const html = document.documentElement;
 const iconMoon = document.getElementById("icon-moon");
@@ -24,6 +26,7 @@ toggleBtn.addEventListener("click", () => {
   updateIcon();
 });
 
+// Hamburger btn toggle
 const hamburger = document.querySelector("#hamburger");
 const navMenu = document.querySelector("#nav-menu");
 
