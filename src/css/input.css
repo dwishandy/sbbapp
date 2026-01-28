@@ -44,16 +44,29 @@
   .filter-btn.active {
     @apply bg-firstcol text-white border-firstcol hover:text-firstcol;
   }
+
+  .theme-bg {
+    background: linear-gradient(
+      to bottom,
+      var(--bg-from) 25%,
+      var(--bg-to) 100%
+    );
+    transition: background 0.5s ease-in-out;
+  }
 }
 
 :root {
   --bg-color: #ffffff;
   --text-color: #0c090a;
+  --bg-from: #ffffff;
+  --bg-to: #0ea5e9; /* firstcol */
 }
 
 html.dark {
   --bg-color: #0c090a;
   --text-color: #f4f0ec;
+  --bg-from: #0b0b0f; /* black-soft */
+  --bg-to: #0ea5e9;
 }
 
 body {

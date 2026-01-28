@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Tentang Semua Berhak Bisa</title>
+
+    <meta
+      property="og:description"
+      content="Bangun Keahlianmu di Bidang Teknologi Informasi"
+    />
+    <link href="../css/output.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="../assets/icons/logo.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script>
+      const savedTheme = localStorage.getItem("theme");
+
+      if (savedTheme === "dark") {
+        html.classList.add("dark");
+      }
+      updateIcon();
+    </script>
+  </head>
+  <body>
+    <!-- header start -->
+    <header
+      class="bg-transparent bg-opacity-70 backdrop-blur-sm fixed top-0 left-0 z-10 w-full px-6 py-4 flex justify-center items-center md:py-1 md:px-12 transition-all duration-500 ease"
+    >
+      <div class="container flex justify-between items-center">
+        <div>
+          <a href="index.html">
+            <img
+              src="../assets/img/logo.webp"
+              alt="Logo Semua Berhak Bisa"
+              class="w-8 md:w-10"
+            />
+          </a>
+        </div>
+
+        <div>
+          <button
+            id="hamburger"
+            name="hamburger"
+            type="button"
+            class="cursor-pointer block md:hidden"
+          >
+            <div
+              class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+            ></div>
+            <div
+              class="hamburger-line transition duration-300 ease-in-out"
+            ></div>
+            <div
+              class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
+            ></div>
+          </button>
+
+          <nav
+            id="nav-menu"
+            class="bg-white dark:bg-black-soft absolute left-0 top-full w-full px-5 py-5 hidden shadow-lg md:static md:block md:bg-transparent md:shadow-none md:dark:bg-transparent font-semibold flex-wrap"
+          >
+            <ul class="block md:flex">
+              <li class="group">
+                <a
+                  href="index.html"
+                  class="mx-3 flex py-2 md:text-sm group-hover:text-firstcol"
+                  >Beranda</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#"
+                  class="mx-3 flex py-2 md:text-sm group-hover:text-firstcol"
+                  >Tentang Komunitas</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="bidang.html"
+                  class="mx-3 flex py-2 md:text-sm group-hover:text-firstcol"
+                  >Bidang Layanan</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#"
+                  class="mx-3 mt-3 md:mt-0 flex justify-center btn-template"
+                  >Mulai Konsultasi</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="flex items-center">
+          <button
+            id="theme-toggle"
+            aria-label="Toggle blacktext-black-soft mode"
+            class="cursor-pointer"
+          >
+            <span id="icon-moon">
+              <img src="../assets/icons/moon.webp" alt="Moon" class="w-8" />
+            </span>
+            <span id="icon-sun" class="hidden">
+              <img src="../assets/icons/Sun.webp" alt="Sun" class="w-8" />
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- Tujuan Komunitas Start -->
+    <section class="w-full flex justify-center px-6 py-24 md:px-12 md:py-28">
+      <div class="container">
+        <div class="flex flex-wrap justify-between space-y-6 md:space-x-10">
+          <!-- Left Content -->
+          <div class="w-full md:w-[30%]">
+            <h2
+              class="text-2xl font-inter font-bold text-black-soft dark:text-light leading-tight md:text-3xl"
+            >
+              Tujuan <br />
+              <span class="text-firstcol">#SemuaBerhakBisa</span>
+            </h2>
+
+            <div class="flex space-x-3 mt-2">
+              <!-- pemrograman -->
+              <div
+                class="w-8 h-8 flex justify-center items-center rounded-full border-2 border-firstcol hover:bg-firstcol transition-colors md:w-9 md:h-9 cursor-pointer"
+              >
+                <i class="fa-solid text-sm md:text-base"></i>
+              </div>
+
+              <!-- desain -->
+              <div
+                class="w-8 h-8 flex justify-center items-center rounded-full border-2 border-secondcol hover:bg-secondcol transition-colors md:w-9 md:h-9 cursor-pointer"
+              >
+                <i class="fa-solid text-sm md:text-base"></i>
+              </div>
+
+              <!-- jaringan -->
+              <div
+                class="w-8 h-8 flex justify-center items-center rounded-full border-2 border-thirdcol hover:bg-thirdcol transition-colors md:w-9 md:h-9 cursor-pointer"
+              >
+                <i class="fa-solid text-sm md:text-base"></i>
+              </div>
+
+              <!-- office -->
+              <div
+                class="w-8 h-8 flex justify-center items-center rounded-full border-2 border-fourthcol hover:bg-fourthcol transition-colors md:w-9 md:h-9 cursor-pointer"
+              >
+                <i class="fa-brands text-sm md:text-base"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- right Content -->
+          <div class="w-full md:w-[65%] space-y-2">
+            <p class="md:text-base">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum vel
+              quam fugit, adipisci hic amet tempore ipsam, doloremque
+              asperiores, corporis eligendi dolore porro facere doloribus
+              molestias aliquam perferendis nemo! A.
+            </p>
+            <p class="md:text-base">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum vel
+              quam fugit, adipisci hic amet tempore ipsam, doloremque
+              asperiores, corporis eligendi dolore porro facere doloribus
+              molestias aliquam perferendis nemo! A.
+            </p>
+            <p class="md:text-base">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum vel
+              quam fugit, adipisci hic amet tempore ipsam, doloremque
+              asperiores, corporis eligendi dolore porro facere doloribus
+              molestias aliquam perferendis nemo! A.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Tujuan Komunitas End -->
+
+    <!-- Mentor Start -->
+    <section class="w-full flex justify-center px-6 py-20 md:px-12 md:py-20">
+      <div class="container">
+        <div class="flex flex-wrap justify-center">
+          <h2
+            class="mb-10 font-inter text-2xl text-center font-bold text-black-soft dark:text-light md:text-3xl"
+          >
+            Mentor
+            <span class="text-firstcol">#SemuaBerhakBisa</span>
+          </h2>
+
+          <div class="flex flex-wrap justify-center space-y-4">
+            <!-- card Ajril -->
+            <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+              <div class="bg-white rounded-xl shadow p-4">
+                <div
+                  class="w-full h-48 bg-radial from-[#115E7B] to-firstcol rounded-xl mb-4"
+                ></div>
+
+                <div class="flex items-center justify-between mb-1">
+                  <h3 class="font-semibold text-lg">Ahmad Ajril Mumtazi</h3>
+                  <div class="flex gap-2">
+                    <a href="#">
+                      <i class="fa-brands text-[18px]"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands text-[18px]"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <p class="text-sm font-medium text-dark-gray mb-2">
+                  Graphic Designer Mentor
+                </p>
+
+                <p class="text-sm text-dark-gray leading-relaxed">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  quisque faucibus ex sapien vitae pellentesque sem placerat in
+                  id cursus mi.
+                </p>
+              </div>
+            </div>
+
+            <!-- card Shandy -->
+            <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+              <div class="bg-white rounded-xl shadow p-4">
+                <div
+                  class="w-full h-48 bg-radial from-[#115E7B] to-firstcol rounded-xl mb-4"
+                ></div>
+
+                <div class="flex items-center justify-between mb-1">
+                  <h3 class="font-semibold text-lg">Shandy Dwi</h3>
+                  <div class="flex gap-2">
+                    <a href="#">
+                      <i class="fa-brands text-[18px]"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands text-[18px]"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <p class="text-sm font-medium text-dark-gray mb-2">
+                  Mentor Pemrograman
+                </p>
+
+                <p class="text-sm text-dark-gray leading-relaxed">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  quisque faucibus ex sapien vitae pellentesque sem placerat in
+                  id cursus mi.
+                </p>
+              </div>
+            </div>
+
+            <!-- card Rifki -->
+            <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+              <div class="bg-white rounded-xl shadow p-4">
+                <div
+                  class="w-full h-48 bg-radial from-[#115E7B] to-firstcol rounded-xl mb-4"
+                ></div>
+
+                <div class="flex items-center justify-between mb-1">
+                  <h3 class="font-semibold text-lg">Rifki Ardiansyah</h3>
+                  <div class="flex gap-2">
+                    <a href="#">
+                      <i class="fa-brands text-[18px]"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands text-[18px]"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <p class="text-sm font-medium text-dark-gray mb-2">
+                  Mentor Jaringan Komputer
+                </p>
+
+                <p class="text-sm text-dark-gray leading-relaxed">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  quisque faucibus ex sapien vitae pellentesque sem placerat in
+                  id cursus mi.
+                </p>
+              </div>
+            </div>
+
+            <!-- card Sahal -->
+            <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+              <div class="bg-white rounded-xl shadow p-4">
+                <div
+                  class="w-full h-48 bg-radial from-[#115E7B] to-firstcol rounded-xl mb-4"
+                ></div>
+
+                <div class="flex items-center justify-between mb-1">
+                  <h3 class="font-semibold text-lg">Sahal Ferlyaqdhan Aufa</h3>
+                  <div class="flex gap-2">
+                    <a href="#">
+                      <i class="fa-brands text-[18px]"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands text-[18px]"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <p class="text-sm font-medium text-dark-gray mb-2">
+                  Mentor Microsoft Office
+                </p>
+
+                <p class="text-sm text-dark-gray leading-relaxed">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  quisque faucibus ex sapien vitae pellentesque sem placerat in
+                  id cursus mi.
+                </p>
+              </div>
+            </div>
+
+            <!-- card Panji -->
+            <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+              <div class="bg-white rounded-xl shadow p-4">
+                <div
+                  class="w-full h-48 bg-radial from-[#115E7B] to-firstcol rounded-xl mb-4"
+                ></div>
+
+                <div class="flex items-center justify-between mb-1">
+                  <h3 class="font-semibold text-lg">Panji Pratama Kurniawan</h3>
+                  <div class="flex gap-2">
+                    <a href="#">
+                      <i class="fa-brands text-[18px]"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands text-[18px]"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <p class="text-sm font-medium text-dark-gray mb-2">
+                  Mentor Pemrograman
+                </p>
+
+                <p class="text-sm text-dark-gray leading-relaxed">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  quisque faucibus ex sapien vitae pellentesque sem placerat in
+                  id cursus mi.
+                </p>
+              </div>
+            </div>
+
+            <!-- card yordan -->
+            <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+              <div class="bg-white rounded-xl shadow p-4">
+                <div
+                  class="w-full h-48 bg-radial from-[#115E7B] to-firstcol rounded-xl mb-4"
+                ></div>
+
+                <div class="flex items-center justify-between mb-1">
+                  <h3 class="font-semibold text-lg">Ahmad Yordan Pusilo</h3>
+                  <div class="flex gap-2">
+                    <a href="#">
+                      <i class="fa-brands text-[18px]"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands text-[18px]"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <p class="text-sm font-medium text-dark-gray mb-2">
+                  Mentor Jaringan Komputer
+                </p>
+
+                <p class="text-sm text-dark-gray leading-relaxed">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  quisque faucibus ex sapien vitae pellentesque sem placerat in
+                  id cursus mi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Mentor End -->
+
+    <!-- bg-footer Start -->
+    <div class="theme-bg">
+      <!-- Zona Wilayah Start -->
+      <section class="w-full flex justify-center px-6 py-20 md:px-12 md:py-20">
+        <div class="container flex justify-center flex-wrap">
+          <div class="flex flex-wrap justify-center">
+            <h2
+              class="w-full font-inter text-2xl text-center font-bold text-black-soft dark:text-light md:text-3xl"
+            >
+              Zona Wilayah Offline
+              <span class="text-firstcol">#SemuaBerhakBisa</span>
+            </h2>
+            <p
+              class="text-center mt-2 md:text-base text-black-soft dark:text-light mb-10 max-w-md md:max-w-xl"
+            >
+              Lorem ipsum dolor sit amet consectetur adipiscing elit quisque
+              faucibus ex sapien vitae pellentesque sem.
+            </p>
+
+            <div
+              class="w-full flex flex-wrap justify-center gap-4 md:gap-x-10 md:max-w-3xl"
+            >
+              <div
+                class="flex justify-center items-center gap-1 px-3 py-1 border-2 border-firstcol rounded-full"
+              >
+                <i class="fa-solid text-firstcol text-xl"></i>
+
+                <div class="text-sm leading-tight">
+                  <p class="text-firstcol font-semibold text-sm">
+                    Kab. Tangerang
+                  </p>
+                  <p class="font-medium text-xs">Kec. Sepatan</p>
+                </div>
+              </div>
+
+              <div
+                class="flex justify-center items-center gap-1 px-3 py-1 border-2 border-firstcol rounded-full"
+              >
+                <i class="fa-solid text-firstcol text-xl"></i>
+
+                <div class="text-sm leading-tight">
+                  <p class="text-firstcol font-semibold text-sm">
+                    Kab. Tangerang
+                  </p>
+                  <p class="font-medium text-xs">Kec. Sepatan Timur</p>
+                </div>
+              </div>
+
+              <div
+                class="flex justify-center items-center gap-1 px-3 py-1 border-2 border-firstcol rounded-full"
+              >
+                <i class="fa-solid text-firstcol text-xl"></i>
+
+                <div class="text-sm leading-tight">
+                  <p class="text-firstcol font-semibold text-sm">
+                    Kab. Tangerang
+                  </p>
+                  <p class="font-medium text-xs">Kec. Rajeg</p>
+                </div>
+              </div>
+
+              <div
+                class="flex justify-center items-center gap-1 px-3 py-1 border-2 border-firstcol rounded-full"
+              >
+                <i class="fa-solid text-firstcol text-xl"></i>
+
+                <div class="text-sm leading-tight">
+                  <p class="text-firstcol font-semibold text-sm">
+                    Kab. Tangerang
+                  </p>
+                  <p class="font-medium text-xs">Kec. Pasar Kemis</p>
+                </div>
+              </div>
+
+              <div
+                class="flex justify-center items-center gap-1 px-3 py-1 border-2 border-firstcol rounded-full"
+              >
+                <i class="fa-solid text-firstcol text-xl"></i>
+
+                <div class="text-sm leading-tight">
+                  <p class="text-firstcol font-semibold text-sm">
+                    Kab. Tangerang
+                  </p>
+                  <p class="font-medium text-xs">Kec. Mauk</p>
+                </div>
+              </div>
+
+              <div
+                class="flex justify-center items-center gap-1 px-3 py-1 border-2 border-firstcol rounded-full"
+              >
+                <i class="fa-solid text-firstcol text-xl"></i>
+
+                <div class="text-sm leading-tight">
+                  <p class="text-firstcol font-semibold text-sm">
+                    Kota Tangerang
+                  </p>
+                  <p class="font-medium text-xs">Kec. Karawaci</p>
+                </div>
+              </div>
+
+              <div
+                class="flex justify-center items-center gap-1 px-3 py-1 border-2 border-firstcol rounded-full"
+              >
+                <i class="fa-solid text-firstcol text-xl"></i>
+
+                <div class="text-sm leading-tight">
+                  <p class="text-firstcol font-semibold text-sm">
+                    Kota Tangerang
+                  </p>
+                  <p class="font-medium text-xs">Kec. Periuk</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Zona Wilayah End -->
+
+      <!-- Footer Start -->
+      <footer
+        class="pt-16 md:pt-20 flex flex-wrap justify-center text-white max-w-lg"
+      >
+        <div class="container">
+          <div class="px-6 pb-4 flex flex-wrap justify-between md:px-10">
+            <div class="flex items-start gap-x-3">
+              <img src="../assets/img/logo.webp" alt="logo" class="w-8" />
+              <div>
+                <h2 class="text-2xl font-semibold md:text-3xl">
+                  #SemuaBerhakBisa
+                </h2>
+                <p class="-mt-1 mb-1 md:text-sm">
+                  Bayar kami dengan senyumanmu.
+                </p>
+                <div class="flex gap-x-1 underline md:gap-x-2">
+                  <a href="#" class="md:text-sm">Home</a>
+                  <a href="#" class="md:text-sm">Tentang Komunitas</a>
+                  <a href="#" class="md:text-sm">Bidang Layanan</a>
+                </div>
+
+                <div class="mt-4 md:hidden">
+                  <h2 class="text-lg font-semibold">Hubungi Kami:</h2>
+                  <div class="flex items-center gap-x-3">
+                    <a
+                      href="#"
+                      class="w-7 h-7 rounded-full flex justify-center items-center hover:bg-dark-gray transition-colors"
+                    >
+                      <i class="fa-brands text-[18px]"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="w-7 h-7 rounded-full flex justify-center items-center hover:bg-dark-gray transition-colors"
+                    >
+                      <i class="fa-brands text-[16px]"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="w-7 h-7 rounded-full flex justify-center items-center hover:bg-dark-gray transition-colors"
+                    >
+                      <i class="fa-brands text-[18px]"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hidden md:block">
+              <h2 class="text-lg font-semibold md:text-xl">Hubungi Kami:</h2>
+              <div class="flex items-center gap-x-3">
+                <a
+                  href="#"
+                  class="w-7 h-7 rounded-full flex justify-center items-center hover:bg-dark-gray transition-colors md:w-8 md:h-8"
+                >
+                  <i class="fa-brands text-[18px] md:text-[22px]"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-7 h-7 rounded-full flex justify-center items-center hover:bg-dark-gray transition-colors md:w-8 md:h-8"
+                >
+                  <i class="fa-brands text-[16px] md:text-[22px]"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-7 h-7 rounded-full flex justify-center items-center hover:bg-dark-gray transition-colors md:w-8 md:h-8"
+                >
+                  <i class="fa-brands text-[18px] md:text-[22px]"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center items-center mt-6 border-t py-4">
+            <p class="md:text-sm">
+              Copyright &copy; 2026 Semua Berhak Bisa. All right reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer End -->
+    </div>
+    <!-- bg-footer End -->
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
