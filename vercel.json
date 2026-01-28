@@ -7,6 +7,9 @@
     {
       "source": "/:slug",
       "destination": "/src/pages/:slug.html"
+    },
+    {
+      "outputDirectory": "src"
     }
   ]
 }
