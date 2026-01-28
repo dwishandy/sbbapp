@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/src/pages/index.html"
+    },
+    {
+      "source": "/:slug",
+      "destination": "/src/pages/:slug.html"
+    }
+  ]
+}
